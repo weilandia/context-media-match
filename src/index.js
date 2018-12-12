@@ -55,6 +55,13 @@ export class MediaProvider extends React.PureComponent {
   }
 }
 
-export const withMediaContext = Component => props => (
-  <MediaContext.Consumer>{context => <Component {...props} {...context} />}</MediaContext.Consumer>
-);
+const getDisplayName = WrappedComponent => WrappedComponent.displayName || WrappedComponent.name || 'Component';
+
+export const withMediaContext = Component => {
+  const WithMediaContext = props => (
+    <MediaContext.Consumer>{context => <Component {...props} {...context} />}</MediaContext.Consumer>
+  );
+
+  WithMediaContext.displayName = `withMediaContext(${getDisplayName(Component)})`;
+  return WithMediaContext;
+};

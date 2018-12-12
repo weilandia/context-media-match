@@ -13,7 +13,7 @@ npm install context-media-match
 
 ## Usage
 
-#### With class component.
+#### Use MediaProvider as a context provider
 
 ```jsx
 import React from 'react';
@@ -24,7 +24,11 @@ const App = (props) => (
     <SomeComponent />
   </MediaProvider>
 )
+```
 
+#### Implement consumer using withMediaContext HOC
+
+```jsx
 // with HOC
 import React from 'react';
 import { withMediaContext } from 'context-media-match';
@@ -38,7 +42,11 @@ class SomeOtherComponent extends Component {
 }
 
 export default withMediaContext(SomeOtherComponent);
+```
 
+#### Implement consumer using without HOC using MediaContext
+
+```jsx
 // without HOC
 import React from 'react';
 import { MediaContext } from 'context-media-match';
@@ -49,7 +57,7 @@ import SomeOtherComponent from './wherever';
 </MediaContext.Consumer>
 ```
 
-#### With default config
+#### Use the default config
 `MediaProvider` comes with a default config based on Bootstrap's break points"
 ```jsx
 static defaultProps = {
@@ -63,7 +71,7 @@ static defaultProps = {
 };
 ```
 
-#### With custom config
+#### Use custom config
 You can provide `MediaProvider` a custom config object with values that are valid media query string.
 
 ```jsx
