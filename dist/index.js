@@ -93,6 +93,7 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MediaContext", function() { return MediaContext; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MediaProvider", function() { return MediaProvider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useMediaContext", function() { return useMediaContext; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "withMediaContext", function() { return withMediaContext; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
@@ -199,6 +200,9 @@ var getDisplayName = function getDisplayName(WrappedComponent) {
   return WrappedComponent.displayName || WrappedComponent.name || 'Component';
 };
 
+var useMediaContext = function useMediaContext() {
+  return Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(MediaContext);
+};
 var withMediaContext = function withMediaContext(Component) {
   var WithMediaContext = function WithMediaContext(props) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(MediaContext.Consumer, null, function (context) {

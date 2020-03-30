@@ -1,6 +1,6 @@
 {
   "name": "context-media-match",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "A small library for matching media queries using React context.  Bootstrap breakpoints by default.",
   "main": "dist/index.js",
   "scripts": {
@@ -28,7 +28,7 @@
   "homepage": "https://github.com/weilandia/context-media-match#readme",
   "peerDependencies": {
     "prop-types": "^15.6.2",
-    "react": "^16.3.0"
+    "react": "^16.8.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",

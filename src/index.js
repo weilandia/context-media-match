@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import debounce from 'lodash.debounce';
 
@@ -56,6 +56,10 @@ export class MediaProvider extends React.PureComponent {
 }
 
 const getDisplayName = WrappedComponent => WrappedComponent.displayName || WrappedComponent.name || 'Component';
+
+export const useMediaContext = () => {
+  return useContext(MediaContext);
+};
 
 export const withMediaContext = Component => {
   const WithMediaContext = props => (
