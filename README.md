@@ -26,6 +26,22 @@ const App = (props) => (
 )
 ```
 
+#### Implement consumer using useMediaContext hook
+
+```jsx
+// with HOC
+import React from 'react';
+import { useMediaContext } from 'context-media-match';
+
+const SomeOtherComponent = () => {
+  const { xs } = useMediaContext();
+
+  return <div>{ xs ? 'is XS' : 'is not XS' }</div>;
+}
+
+export default withMediaContext(SomeOtherComponent);
+```
+
 #### Implement consumer using withMediaContext HOC
 
 ```jsx
