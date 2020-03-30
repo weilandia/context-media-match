@@ -29,7 +29,7 @@ const App = (props) => (
 #### Implement consumer using useMediaContext hook
 
 ```jsx
-// with HOC
+// with hook
 import React from 'react';
 import { useMediaContext } from 'context-media-match';
 
