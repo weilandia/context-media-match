@@ -39,7 +39,7 @@ const SomeOtherComponent = () => {
   return <div>{ xs ? 'is XS' : 'is not XS' }</div>;
 }
 
-export default withMediaContext(SomeOtherComponent);
+export default SomeOtherComponent;
 ```
 
 #### Implement consumer using withMediaContext HOC
