@@ -31,16 +31,16 @@
     "react": ">=16.8.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/plugin-transform-react-jsx": "^7.9.4",
-    "@babel/preset-env": "^7.9.0",
-    "babel-loader": "^8.1.0",
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-transform-react-jsx": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "babel-loader": "^8.2.2",
     "prop-types": ">=15.6.2",
-    "react": ">=16.8.0",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "react": ">=17.0.2",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
   },
   "dependencies": {
     "lodash.debounce": "^4.0.8"
